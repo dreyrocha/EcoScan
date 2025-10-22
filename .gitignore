@@ -1,0 +1,57 @@
+# Arquivos de Sistema e Logs Gerais
+.DS_Store
+.idea/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambiente Virtual Python (se aplicável a qualquer pasta)
+venv/
+
+# --- REGRAS PARA O BACK-END (api-ecoscan) ---
+
+# Dependências (Bun/NPM/Yarn)
+/api-ecoscan/api/node_modules
+
+# Arquivos de ambiente (NUNCA envie para o GitHub)
+/api-ecoscan/api/.env
+/api-ecoscan/api/.env.*
+!/api-ecoscan/api/.env.example
+
+# Pastas de build/compilação e output
+/api-ecoscan/api/out
+/api-ecoscan/api/dist
+/api-ecoscan/api/build
+/api-ecoscan/api/*.tgz
+
+# Relatórios de Testes e Cobertura
+/api-ecoscan/api/coverage
+/api-ecoscan/api/*.lcov
+/api-ecoscan/api/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Caches
+/api-ecoscan/api/.eslintcache
+/api-ecoscan/api/.cache
+/api-ecoscan/api/*.tsbuildinfo
+
+
+# --- REGRAS PARA O FRONT-END (ecoscan-project) ---
+
+# Dependências
+/ecoscan-project/node_modules
+
+# Arquivos de ambiente
+/ecoscan-project/.env
+/ecoscan-project/.env.*
+!/ecoscan-project/.env.example
+
+# Pasta de build/compilação (Vite/React)
+/ecoscan-project/dist
+/ecoscan-project/build
+
+# Caches
+/ecoscan-project/.eslintcache
+/ecoscan-project/.cache
+/ecoscan-project/*.tsbuildinfo
