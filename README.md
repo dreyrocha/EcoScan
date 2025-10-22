@@ -136,6 +136,5 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 **Andrey Rocha**
 
--   LinkedIn: [SEU LINKEDIN](https://www.linkedin.com/in/andrey-rocha-790b6b1a0/)
+-   LinkedIn: [ANDREY ROCHA](https://www.linkedin.com/in/andrey-rocha-790b6b1a0/)
 -   GitHub: [@dreyrocha](https://github.com/dreyrocha)
--   Email: seu.email@exemplo.com
