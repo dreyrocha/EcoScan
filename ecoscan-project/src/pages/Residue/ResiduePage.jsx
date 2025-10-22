@@ -131,6 +131,7 @@ function ResiduePage() {
             const compressedFile = await imageCompression(selectedFile, options);
             setFile(compressedFile); setPreviewUrl(URL.createObjectURL(compressedFile));
         } catch (err) {
+            console.error("Erro ao comprimir a imagem:", err);
             setError("Não foi possível processar esta imagem. Tente outra."); setFile(null); setPreviewUrl(null);
         } finally { setLoading(false); }
     };
