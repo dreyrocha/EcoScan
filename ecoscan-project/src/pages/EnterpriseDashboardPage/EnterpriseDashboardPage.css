@@ -1,0 +1,245 @@
+.enterprise-dashboard-page {
+  min-height: calc(100vh - 120px);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.dashboard-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: flex-start;
+}
+
+.profile-column {
+  flex: 1;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espaço entre o perfil e o gráfico */
+}
+
+.collection-column {
+  flex: 1.5;
+  min-width: 350px;
+}
+
+.profile-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-header h2 {
+  font-size: 1.8rem;
+  color: #90ee90;
+  margin: 0;
+}
+
+.profile-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-item-label {
+  font-size: 0.9rem;
+  color: #bdc3c7;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.profile-item-value {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.collection-manager {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- ESTILOS DO GRÁFICO ATUALIZADOS --- */
+.chart-section {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chart-section h3 {
+  font-size: 1.5rem; /* Título um pouco menor */
+  color: #90ee90;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-section, .collection-history {
+  width: 100%;
+}
+
+.form-section {
+  padding-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-section h3 {
+  font-size: 1.8rem;
+  color: #90ee90;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.collection-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #bdc3c7;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.form-error-collection {
+  color: #EC7063;
+  text-align: center;
+}
+
+.submit-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  background-color: #90ee90; 
+  color: #1a3a1a;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #76c876;
+}
+
+.submit-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.collection-history h4 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.collection-list {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.collection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.collection-info {
+  display: flex;
+  flex-direction: column;
+}
+.collection-info span:first-child {
+  font-weight: bold;
+  color: #ffffff;
+}
+.collection-details {
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #EC7063;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.2s;
+}
+.delete-button:hover {
+  color: #e74c3c;
+}
+
+.no-collections {
+  color: #bdc3c7;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media (min-width: 600px) {
+  .profile-body {
+    grid-template-columns: 1fr 1fr;
+  }
+}

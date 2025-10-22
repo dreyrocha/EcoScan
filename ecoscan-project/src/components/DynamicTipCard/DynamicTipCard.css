@@ -1,0 +1,59 @@
+.tip-card-section {
+  width: 100%;
+  max-width: 1000px;
+  /* --- ALTERAÇÃO AQUI: De amarelo para um tom neutro e elegante --- */
+  background-color: rgba(255, 255, 255, 0.08); /* Fundo branco com baixa opacidade */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Borda sutil */
+  color: #ecf0f1; /* Texto mais claro */
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tip-card-icon {
+  font-size: 2.5rem;
+  color: #f1c40f; /* Mantém o ícone amarelo para dar um toque de cor */
+}
+
+.tip-card-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tip-card-content p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #bdc3c7; /* Cor secundária para o texto */
+}
+
+.tip-card-content span {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.tip-card-bin-info {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.tip-card-bin-info svg {
+  font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+  .tip-card-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
